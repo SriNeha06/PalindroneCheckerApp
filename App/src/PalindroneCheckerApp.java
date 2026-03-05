@@ -19,26 +19,28 @@
  * The goal is to establish a clear startup flow.
  *
  * @neha  Developer
- * @version 2.0
+ * @version 3.0
  */
-public class UseCase2PalindromeCheckerApp {
+public class UseCase3PalindromeCheckerApp {
 
     public static void main(String[] args) {
 
+        // Original string
+        String original = "madam";
 
-        String word = "madam";
-
-
+        // Variable to store reversed string
         String reversed = "";
 
-        for (int i = word.length() - 1; i >= 0; i--) {
-            reversed = reversed + word.charAt(i);
+        // Reverse the string using for loop
+        for (int i = original.length() - 1; i >= 0; i--) {
+            reversed = reversed + original.charAt(i);
         }
 
-        if (word.equals(reversed)) {
-            System.out.println(word + " is a Palindrome.");
+        // Compare original and reversed string
+        if (original.equals(reversed)) {
+            System.out.println(original + " is a Palindrome.");
         } else {
-            System.out.println(word + " is not a Palindrome.");
+            System.out.println(original + " is not a Palindrome.");
         }
     }
 }
