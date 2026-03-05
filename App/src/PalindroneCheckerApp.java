@@ -19,22 +19,26 @@
  * The goal is to establish a clear startup flow.
  *
  * @neha  Developer
- * @version 1.0
+ * @version 2.0
  */
-public class PalindroneCheckerApp {
+public class UseCase2PalindromeCheckerApp {
 
     public static void main(String[] args) {
 
-        System.out.println("======================================");
-        System.out.println("     Welcome to PalindromeChecker     ");
-        System.out.println("======================================");
 
-        System.out.println("Application Name  : Palindrome Checker App");
-        System.out.println("Application Version : 1.0");
+        String word = "madam";
 
-        System.out.println("--------------------------------------");
-        System.out.println("Application started successfully.");
-        System.out.println("Proceeding to next use case...");
-        System.out.println("--------------------------------------");
+
+        String reversed = "";
+
+        for (int i = word.length() - 1; i >= 0; i--) {
+            reversed = reversed + word.charAt(i);
+        }
+
+        if (word.equals(reversed)) {
+            System.out.println(word + " is a Palindrome.");
+        } else {
+            System.out.println(word + " is not a Palindrome.");
+        }
     }
 }

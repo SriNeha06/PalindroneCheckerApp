@@ -125,3 +125,126 @@ Version: 1.0
 ## Author
 
 Palindrome Checker App – Java Practice Project
+# Palindrome Checker App – Use Case 2
+
+## Overview
+
+The **Palindrome Checker App** is a simple console-based Java application that checks whether a given string is a palindrome.
+A palindrome is a word that reads the same forwards and backwards.
+
+Example:
+
+* `madam`
+* `level`
+* `racecar`
+
+This project focuses on strengthening basic **Java programming concepts** such as classes, the main method, strings, and conditional statements.
+
+---
+
+## Use Case 2: Print a Hardcoded Palindrome Result
+
+### Goal
+
+Display whether a **hardcoded string** is a palindrome.
+
+### Actor
+
+User
+
+### Flow
+
+1. Program starts.
+2. A hardcoded string is defined in the program.
+3. The string is reversed.
+4. The program checks whether the original string and reversed string are the same.
+5. The result is printed on the console.
+6. Program exits.
+
+---
+
+## Key Concepts Used
+
+### Class
+
+In Java, every program must be written inside a class. The class acts as a container for the program logic.
+
+### Main Method
+
+The entry point of the Java program.
+
+```
+public static void main(String[] args)
+```
+
+### Static Keyword
+
+The `static` keyword allows the Java Virtual Machine (JVM) to call the `main()` method without creating an object of the class.
+
+### String
+
+A built-in Java class used to store and manipulate text.
+
+### String Literal
+
+A sequence of characters enclosed in double quotes.
+
+Example:
+
+```
+"madam"
+```
+
+### Conditional Statement (if-else)
+
+Used to check whether the string is a palindrome.
+
+### Console Output
+
+`System.out.println()` is used to print the result on the console.
+
+---
+
+## Data Structure Used
+
+**String**
+
+The string data structure is used to store the word that needs to be checked for a palindrome.
+
+---
+
+## Program File
+
+```
+UseCase2PalindromeCheckerApp.java
+```
+
+---
+
+## How to Compile and Run
+
+### Step 1: Compile the Program
+
+```
+javac UseCase2PalindromeCheckerApp.java
+```
+
+### Step 2: Run the Program
+
+```
+java UseCase2PalindromeCheckerApp
+```
+
+---
+
+## Sample Output
+
+```
+madam is a Palindrome.
+```
+
+---
+
+## Author
+
+Palindrome Checker App – Java Learning Project
