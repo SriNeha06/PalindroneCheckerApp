@@ -1,23 +1,25 @@
-PalindromeCheckerApp – Use Case 4
+PalindromeCheckerApp – Use Case 5
 
 Description:
-This console-based Java application checks whether a given string is a palindrome using a Character Array (char[]).
+This Java console application checks whether a given string is a palindrome using a Stack data structure.
 
 Concepts Used:
-- Character Arrays
-- Array Indexing
-- Two Pointer Technique
-- Time Complexity Awareness
+- Stack (LIFO Data Structure)
+- Push Operation
+- Pop Operation
+- String Character Comparison
+- Reversal Logic using Stack
 
 Program Flow:
 1. User enters a string.
-2. String is converted into char[].
-3. Two pointers compare characters from start and end.
-4. If all characters match → Palindrome.
-5. Otherwise → Not a Palindrome.
+2. Each character of the string is pushed into the stack.
+3. Characters are popped from the stack.
+4. Popped characters are compared with the original string characters.
+5. If all characters match → Palindrome.
+6. Otherwise → Not a Palindrome.
 
-Compile:
-javac UseCase4PalindromeCheckerApp.java
+Compilation:
+javac UseCase5PalindromeCheckerApp.java
 
-Run:
-java UseCase4PalindromeCheckerApp
+Execution:
+java UseCase5PalindromeCheckerApp
