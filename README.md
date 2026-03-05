@@ -1,22 +1,21 @@
-# PalindromeCheckerApp – Use Case 6
+# PalindromeCheckerApp – Use Case 7
 
 ## Description:
-This console-based Java application checks whether a given string is a palindrome using both **Queue** and **Stack** to demonstrate FIFO vs LIFO behavior.
+This console-based Java application checks whether a given string is a palindrome using a **Deque (Double Ended Queue)** for optimized front and rear comparisons.
 
 ## Key Concepts:
-- **Queue (FIFO)**: First In First Out data structure.
-- **Stack (LIFO)**: Last In First Out data structure.
-- **Enqueue & Dequeue**: Insert/remove elements from queue.
-- **Push & Pop**: Insert/remove elements from stack.
-- **Logical Comparison**: Dequeue (queue) vs Pop (stack) to validate palindrome.
+- **Deque (Double Ended Queue)**: Allows insertion and removal from both front and rear.
+- **Front and Rear Access**: Directly compare first and last characters.
+- **Optimized Handling**: No need for separate reversal structures like stack or queue.
 
 ## Program Flow:
 1. User enters a string.
-2. Each character is enqueued to a Queue and pushed to a Stack.
-3. Characters are dequeued from the Queue and popped from the Stack.
-4. If all corresponding characters match → Palindrome.
-5. Otherwise → Not a Palindrome.
+2. Characters are inserted into a Deque.
+3. First and last characters are removed and compared.
+4. Repeat until deque is empty or has one element.
+5. If all pairs match → Palindrome.
+6. Otherwise → Not a Palindrome.
 
 ## Compilation:
 ```bash
-javac UseCase6PalindromeCheckerApp.java
+javac UseCase7PalindromeCheckerApp.java
