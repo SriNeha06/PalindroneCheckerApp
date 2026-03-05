@@ -1,46 +1,40 @@
-/**
- * =========================================================
- * MAIN CLASS - UseCase1PalindromeApp
- * =========================================================
- *
- * Use Case 1: Application Entry & Welcome Message
- *
- * Description:
- * This class represents the entry point of the
- * Palindrome Checker Management System.
- *
- * At this stage, the application:
- * - Starts execution from the main() method
- * - Displays a welcome message
- * - Shows application version
- *
- * No palindrome logic is implemented yet.
- *
- * The goal is to establish a clear startup flow.
- *
- * @neha  Developer
- * @version 3.0
- */
-public class UseCase3PalindromeCheckerApp {
+import java.util.Scanner;
+
+public class UseCase4PalindromeCheckerApp {
 
     public static void main(String[] args) {
 
-        // Original string
-        String original = "madam";
+        Scanner scanner = new Scanner(System.in);
 
-        // Variable to store reversed string
-        String reversed = "";
+        // Ask user for input
+        System.out.print("Enter a string to check palindrome: ");
+        String input = scanner.nextLine();
 
-        // Reverse the string using for loop
-        for (int i = original.length() - 1; i >= 0; i--) {
-            reversed = reversed + original.charAt(i);
+        // Convert string to character array
+        char[] charArray = input.toCharArray();
+
+        // Two pointer technique
+        int start = 0;
+        int end = charArray.length - 1;
+
+        boolean isPalindrome = true;
+
+        while (start < end) {
+            if (charArray[start] != charArray[end]) {
+                isPalindrome = false;
+                break;
+            }
+            start++;
+            end--;
         }
 
-        // Compare original and reversed string
-        if (original.equals(reversed)) {
-            System.out.println(original + " is a Palindrome.");
+        // Output result
+        if (isPalindrome) {
+            System.out.println("The given string is a Palindrome.");
         } else {
-            System.out.println(original + " is not a Palindrome.");
+            System.out.println("The given string is NOT a Palindrome.");
         }
+
+        scanner.close();
     }
 }
