@@ -1,21 +1,24 @@
-# PalindromeCheckerApp – Use Case 12
+# PalindromeCheckerApp – Use Case 13: Performance Comparison
 
 ## Description:
-This Java console application demonstrates **Strategy Pattern** for palindrome checking. Users can dynamically choose which algorithm to use (Stack or Deque).
+This Java console application runs **multiple palindrome algorithms** and compares their execution times.
+
+## Algorithms Tested:
+1. **Stack-based Palindrome**
+2. **Deque-based Palindrome**
+3. **Two-pointer Palindrome**
+4. **Recursive Palindrome**
 
 ## Key Concepts:
-- **Interface**: `PalindromeStrategy` defines a common method for all strategies.
-- **Polymorphism**: Concrete strategies implement the interface differently.
-- **Strategy Pattern**: Context class (`PalindromeCheckerContext`) can work with any strategy dynamically.
-- **Data Structure**: Stack or Deque, depending on strategy.
+- **System.nanoTime()**: Captures execution time in nanoseconds.
+- **Algorithm Comparison**: Compare efficiency of different palindrome approaches.
 
 ## Program Flow:
 1. User enters a string.
-2. User selects a palindrome algorithm (Stack or Deque).
-3. `PalindromeCheckerContext` sets the chosen strategy.
-4. Context calls `checkPalindrome()` of the strategy.
-5. Prints result.
+2. Each algorithm is executed.
+3. Execution time for each algorithm is captured.
+4. Results and times are displayed.
 
 ## Compilation:
 ```bash
-javac UseCase12PalindromeCheckerApp.java
+javac UseCase13PalindromeCheckerApp.java
