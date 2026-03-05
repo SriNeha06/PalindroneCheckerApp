@@ -1,22 +1,22 @@
-# PalindromeCheckerApp – Use Case 10
+# PalindromeCheckerApp – Use Case 11
 
 ## Description:
-This Java console application checks whether a string is a palindrome **ignoring spaces, punctuation, and capitalization**.
+This Java console application checks whether a string is a palindrome using an **object-oriented approach**. All palindrome logic is encapsulated in the `PalindromeChecker` class.
 
 ## Key Concepts:
-- **String Preprocessing**: Normalize input by removing non-alphanumeric characters and converting to lowercase.
-- **Two-Pointer Technique**: Efficiently check palindrome by comparing start and end characters.
-- **Regular Expressions**: Used for removing unwanted characters.
+- **Encapsulation**: Internal state (`input`) is private.
+- **Single Responsibility Principle**: Class only handles palindrome logic.
+- **Stack-based Logic**: Stack is used to reverse characters for comparison.
 
 ## Program Flow:
 1. User enters a string.
-2. Input is normalized:
-    - Remove non-alphanumeric characters.
-    - Convert to lowercase.
-3. Two-pointer technique checks palindrome.
+2. `PalindromeChecker` object is created with input string.
+3. Call `checkPalindrome()` method:
+   - Push characters to stack.
+   - Pop and compare with original string.
 4. If all characters match → Palindrome.
 5. Otherwise → Not a Palindrome.
 
 ## Compilation:
 ```bash
-javac UseCase10PalindromeCheckerApp.java
+javac UseCase11PalindromeCheckerApp.java
